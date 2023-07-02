@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Main-Class: StepperSceneBuilderFX.Screens.firstScreen.FirstScreen
+Class-Path: engine.jar UI.jar
+

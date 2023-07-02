@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="execute">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/stepper.jar!/" />
+      <root url="jar://$PROJECT_DIR$/UI.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

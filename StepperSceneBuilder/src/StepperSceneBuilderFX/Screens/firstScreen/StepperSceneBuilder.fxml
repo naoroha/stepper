@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane fx:id="scrollPaneRoot" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="StepperSceneBuilderFX.Screens.firstScreen.FirstScreenController">
+   <content>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity">
+         <children>
+            <BorderPane layoutY="14.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <bottom>
+                  <AnchorPane BorderPane.alignment="CENTER">
+                     <children>
+                        <HBox fx:id="ExecuteButtonHBox" alignment="CENTER_RIGHT" layoutX="593.0" layoutY="31.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="593.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="31.0">
+                           <children>
+                              <Button fx:id="executeButton" mnemonicParsing="false" onAction="#execution" text=" Execute Flow" textAlignment="CENTER" visible="false">
+                                 <font>
+                                    <Font name="Baskerville Old Face" size="18.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+               </bottom>
+               <top>
+                  <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="150.0" prefWidth="807.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <HBox alignment="CENTER" layoutX="200.0" layoutY="14.0" prefHeight="32.0" prefWidth="200.0" />
+                        <HBox layoutX="89.0" layoutY="58.0" prefHeight="43.0" prefWidth="577.0">
+                           <children>
+                              <Button fx:id="LoadFileBtn" mnemonicParsing="false" onAction="#LoadFIleAction" text="Load XML">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </Button>
+                              <TextField fx:id="XmlPathTextField" prefHeight="31.0" prefWidth="420.0">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="102.0" layoutY="101.0" prefHeight="43.0" prefWidth="552.0">
+                           <children>
+                              <Button fx:id="flowDefinitionBtn" disable="true" mnemonicParsing="false" onAction="#showFlowDefinition" text="Flow Defintion">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="flowExecutionBtn" disable="true" mnemonicParsing="false" onAction="#showFlowExecution" text="Flows Execution">
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="executionHistoryBtn" disable="true" mnemonicParsing="false" onAction="#showExecutionHistory" text="Executions History">
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="statisticsBtn" disable="true" mnemonicParsing="false" onAction="#showStatistics" text="Statistics">
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <ToggleButton fx:id="darkMode" layoutX="681.0" layoutY="15.0" mnemonicParsing="false" text="Drak Mode" />
+                        <Label alignment="CENTER" layoutX="377.0" layoutY="19.0" text="Stepper" textAlignment="CENTER" textFill="#1e0bee">
+                           <font>
+                              <Font name="Calibri" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </top>
+               <left>
+                  <AnchorPane BorderPane.alignment="CENTER">
+                     <children>
+                        <VBox fx:id="AvailableFlowsVB" alignment="TOP_CENTER" layoutY="42.0" spacing="10.0" AnchorPane.bottomAnchor="-0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                     <BorderPane.margin>
+                        <Insets left="10.0" top="20.0" />
+                     </BorderPane.margin>
+                  </AnchorPane>
+               </left>
+               <center>
+                  <AnchorPane BorderPane.alignment="CENTER">
+                     <children>
+                        <VBox fx:id="descriptionVBox" spacing="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </VBox>
+                     </children>
+                     <BorderPane.margin>
+                        <Insets left="10.0" right="20.0" top="20.0" />
+                     </BorderPane.margin>
+                  </AnchorPane>
+               </center>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>

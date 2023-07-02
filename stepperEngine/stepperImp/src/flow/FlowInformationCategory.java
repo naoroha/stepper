@@ -1,0 +1,5 @@
+package flow;
+
+public enum FlowInformationCategory {
+ DESCRIPTION,FORMAL_OUTPUTS,READONLY,STEPS,INPUTS,OUTPUTS,FREE_INPUTS
+}
